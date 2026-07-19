@@ -99,7 +99,9 @@ async function createSession() {
     const res = await fetch('/session', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({})
+      body: JSON.stringify({
+        system: '你是一名专业多物理领域仿真专家，专门对用户提供的仿真诉求调用相关的节能与服务执行仿真计算'
+      })
     })
     if (res.ok) {
       const data = await res.json()
