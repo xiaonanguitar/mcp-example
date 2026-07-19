@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "simulation": {
+      "type": "remote",
+      "url": "http://localhost:3000/mcp",
+      "enabled": true
+    }
+  }
+}

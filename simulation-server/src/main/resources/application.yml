@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+simulation:
+  tools:
+    - name: lumerical
+      description: "Lumerical光学仿真工具 - 用于光子学和光学器件仿真"
+      capabilities: ["FDTD", "MODE", "DEVICE", "INTERCONNECT"]
+    - name: hyperworks
+      description: "HyperWorks多物理场仿真工具 - 用于结构、流体、热分析"
+      capabilities: ["OptiStruct", "Radioss", "AcuSolve", "Flux"]
+  mcp:
+    enabled: true
+    port: 3000
