@@ -109,27 +109,27 @@ public class SimulationService {
             taskInfo.setProgress(10);
             taskInfo.setMessage("正在初始化仿真环境...");
             log.info("[异步仿真] taskId={} - 初始化仿真环境", taskId);
-            Thread.sleep(2000);
+            Thread.sleep(5000);
 
             taskInfo.setProgress(30);
             taskInfo.setMessage("正在构建网格模型...");
             log.info("[异步仿真] taskId={} - 构建网格模型", taskId);
-            Thread.sleep(3000);
+            Thread.sleep(8000);
 
             taskInfo.setProgress(50);
             taskInfo.setMessage("正在设置边界条件...");
             log.info("[异步仿真] taskId={} - 设置边界条件", taskId);
-            Thread.sleep(2000);
+            Thread.sleep(5000);
 
             taskInfo.setProgress(70);
             taskInfo.setMessage("正在执行求解计算...");
             log.info("[异步仿真] taskId={} - 执行求解计算", taskId);
-            Thread.sleep(4000);
+            Thread.sleep(10000);
 
             taskInfo.setProgress(90);
             taskInfo.setMessage("正在后处理结果...");
             log.info("[异步仿真] taskId={} - 后处理结果", taskId);
-            Thread.sleep(2000);
+            Thread.sleep(5000);
 
             Map<String, Object> mockResult = generateMockResult(toolName, action, params);
             taskInfo.setResult(mockResult);
